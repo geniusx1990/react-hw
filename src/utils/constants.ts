@@ -1,7 +1,14 @@
-export const LIBRARIESLISTHEADER = ['Library', 'Language', 'Framework Support', 'Weekly Downloads', 'Description'];
+export const LIBRARIESLISTHEADER = [
+    {id: 1, name: 'Library'}, 
+    {id: 2, name: 'Language'}, 
+    {id: 3, name: 'Framework Support'}, 
+    {id: 4, name: 'Weekly Downloads'}, 
+    {id: 5, name: 'Description'}
+];
 
 export const LIBRARIES = [
     {
+        id: 1,
         library: 'i18next',
         language: 'JavaScript',
         framework: 'React, Angular, Vue.js, Node.js',
@@ -9,6 +16,7 @@ export const LIBRARIES = [
         description: 'A comprehensive solution to localize your applications, both on the back-end and front-end',
     },
     {
+        id: 2,
         library: 'react-i18next',
         language: 'JavaScript',
         framework: 'React',
@@ -16,6 +24,7 @@ export const LIBRARIES = [
         description: 'Built on top of i18next library, designed to integrate seamlessly with React',
     },
     {
+        id: 3,
         library: 'react-intl',
         language: 'JavaScript',
         framework: 'React',
@@ -23,6 +32,7 @@ export const LIBRARIES = [
         description: 'A robust framework for internationalization in React, supporting over 150 languages',
     },
     {
+        id: 4,
         library: 'angular-translate',
         language: 'JavaScript',
         framework: 'Angular',
@@ -30,6 +40,7 @@ export const LIBRARIES = [
         description: 'An essential solution for internationalizing Angular applications',
     },
     {
+        id: 5,
         library: 'vue-i18n',
         language: 'JavaScript',
         framework: 'Vue.js',

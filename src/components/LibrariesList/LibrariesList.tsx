@@ -7,14 +7,14 @@ export default function LibrariesList() {
         <table>
             <thead>
             <tr>
-                {LIBRARIESLISTHEADER.map((item, index) => (
-                    <th key={index}>{item}</th>
+                {LIBRARIESLISTHEADER.map((item) => (
+                    <th key={item.id}>{item.name}</th>
                 ))}
             </tr>
             </thead>
             <tbody>
-            {LIBRARIES.map((item, index) => (
-                <tr key={index}>
+            {LIBRARIES.map((item) => (
+                <tr key={item.id}>
                     <td>{item.library}</td>
                     <td>{item.language}</td>
                     <td>{item.framework}</td>
