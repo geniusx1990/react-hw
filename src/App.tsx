@@ -1,10 +1,16 @@
 import './App.css'
-import LibrariesList from "./components/LibrariesList/LibrariesList.tsx";
+import FooterComponent from './components/FooterComponent/FooterComponent.tsx';
+import HeaderComponent from './components/HeaderComponent/HeaderComponent.tsx';
+import RouterSwitcher from './utils/Router/RouterSwitcher.tsx';
 
 function App() {
 
   return (
-      <LibrariesList />
+    <>
+      <HeaderComponent />
+      <RouterSwitcher />
+      <FooterComponent />
+    </>
   )
 }
 
