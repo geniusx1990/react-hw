@@ -9,7 +9,8 @@
 .header__cart img {
   width: 25px;
   height: 17px;
-  padding: 19px 17px 19px 13px;
+  margin: 19px 17px 19px 13px;
+  z-index: 100;
 }
 
 .header__cart-counter {

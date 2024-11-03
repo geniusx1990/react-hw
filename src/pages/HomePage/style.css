@@ -1,0 +1,86 @@
+.hero {
+  background-image: url("../../assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.button_order {
+  background: #35b8be;
+  border: none;
+  border-radius: 6px;
+  width: 193px;
+  height: 60px;
+  color: #ffff;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 30.6px;
+}
+
+.hero__title {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 1.8px;
+  margin-bottom: 27px;
+}
+
+.color-text {
+  color: #35b8be;
+}
+
+.hero__paragraph {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.12px;
+  letter-spacing: 0.36px;
+  color: #546285;
+  margin-bottom: 53px;
+}
+
+.hero_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 120px 139.8px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero_rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero_star {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.hero_reviews {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.rating-color {
+  color: #35b8be;
+}
+
+.trustpilot {
+  font-family: Inter;
+  font-weight: 600;
+  margin-left: 2.55px;
+}

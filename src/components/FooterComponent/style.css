@@ -4,7 +4,9 @@
 }
 
 .footer__content {
-  padding: 99.8px 120.03px 60px 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 99.8px 120px 60.02px;
 }
 
 .foooter_text {
@@ -22,6 +24,7 @@
 }
 
 footer {
+  width: 100%;
   background-image: url("../../assets/footer_image.png");
   background-size: cover;
   background-position: center;
@@ -58,6 +61,7 @@ footer {
   font-size: 13px;
   font-weight: 400;
   color: #08090a;
+  padding-bottom: 28px;
 }
 
 .footer__section {
