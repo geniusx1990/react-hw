@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './style.css';
 import { MenuItem, MENUITEMS } from "../../utils/constants";
 import Card from "../Card/Card";
