@@ -27,6 +27,6 @@
 }
 
 .sort_button.active {
-  color: #35b8be;
   background: #ffffff;
+  color: #35b8be;
 }
