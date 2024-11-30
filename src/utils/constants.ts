@@ -1,3 +1,4 @@
+export const API_URL = 'https://65de35f3dccfcd562f5691bb.mockapi.io/api/v1/meals';
 export const HEADERLINKS = [
   {
     id: 0,
@@ -27,59 +28,59 @@ export const FOOTERCONTENT = [
     title: "COMPANY",
     links: [
       {
-        id: 0,
+        id: 1,
         name: "Home",
         route: "#",
       },
       {
-        id: 1,
+        id: 2,
         name: "Order",
         route: "#",
       },
       {
-        id: 2,
+        id: 3,
         name: "FAQ",
         route: "#",
       },
       {
-        id: 3,
+        id: 4,
         name: "Contact",
         route: "#",
       },
     ],
   },
   {
-    id: 1,
+    id: 5,
     title: "TEMPLATE",
     links: [
       {
-        id: 0,
+        id: 6,
         name: "Style Guide",
         route: "#",
       },
       {
-        id: 1,
+        id: 7,
         name: "Changelog",
         route: "#",
       },
       {
-        id: 2,
+        id: 8,
         name: "Licence",
         route: "#",
       },
       {
-        id: 3,
+        id: 9,
         name: "Webflow University",
         route: "#",
       },
     ],
   },
   {
-    id: 1,
+    id: 10,
     title: "FLOWBASE",
     links: [
       {
-        id: 0,
+        id: 11,
         name: "More Cloneables",
         route: "#",
       },
@@ -88,15 +89,15 @@ export const FOOTERCONTENT = [
 ];
 
 export interface MenuItem {
-  id: number;
-  name: string;
+  id: string;
+  meal: string;
   price: number;
-  description: string;
+  instructions: string;
   img: string;
   category: string;
 }
 
-export const MENUITEMS: MenuItem[] = [
+/* export const MENUITEMS: MenuItem[] = [
   {
     id: 0,
     name: "Burger Dreams",
@@ -152,3 +153,4 @@ export const MENUITEMS: MenuItem[] = [
     category: "Dinner, Breakfast",
   },
 ];
+ */

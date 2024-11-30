@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './style.css';
-import { MenuItem, MENUITEMS } from "../../utils/constants";
+import { MenuItem } from "../../utils/constants";
 import Card from "../Card/Card";
 
 const MENUSORT = [
@@ -9,8 +9,13 @@ const MENUSORT = [
     { id: 2, name: 'Breakfast' }
 ];
 
-export default function MenuList() {
+interface MenuListProps {
+    items: MenuItem[]; 
+}
+
+export default function MenuList({ items }: MenuListProps) {
     const [activeTabs, setActiveTabs] = useState<string[]>([]);
+    const [visibleCount, setVisibleCount] = useState<number>(10);
 
     const handleTabClick = (category: string) => {
         setActiveTabs(prevActiveTabs =>
@@ -18,12 +23,19 @@ export default function MenuList() {
                 ? prevActiveTabs.filter(tab => tab !== category)
                 : [...prevActiveTabs, category]
         );
+        setVisibleCount(10);
     };
 
-    const filteredItems = MENUITEMS.filter(item =>
+    const filteredItems = items.filter(item =>
         activeTabs.length === 0 || 
         activeTabs.some(category => item.category.includes(category))
     );
+
+    const visibleItems = filteredItems.slice(0, visibleCount);
+
+    const handleSeeMore = () => {
+        setVisibleCount(prevCount => prevCount + 10);
+    };
 
     return (
         <>
@@ -39,10 +51,15 @@ export default function MenuList() {
                 ))}
             </div>
             <div className="menu-list">
-                {filteredItems.map((item: MenuItem) => (
+                {visibleItems.map((item: MenuItem) => (
                     <Card key={item.id} item={item} />
                 ))}
             </div>
+            {visibleItems.length < filteredItems.length && (
+                <button className="more" onClick={handleSeeMore}>
+                    See More
+                </button>
+            )}
         </>
     );
 }
