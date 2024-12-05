@@ -43,3 +43,37 @@
   border-radius: 6px;
   background: #fafafa;
 }
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit {
+  background: #35b8be;
+  width: 147px;
+  height: 52px;
+  border-radius: 6px;
+  border: none;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.cancel {
+  width: 147px;
+  height: 52px;
+  border-radius: 6px;
+  border: none;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #222222;
+  background: #ffffff;
+  border: 1px solid #61728333;
+  margin-left: 30px;
+}

@@ -4,17 +4,23 @@ import MenuPage from "../../pages/MenuPage/MenuPage";
 import CompanyPage from "../../pages/CompanyPage/CompanyPage";
 import LoginPage from "../../pages/LoginPage/LoginPage";
 import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage";
+import { ProtectedRoute } from "./protectedRoute";
 
 const RouterSwitcher = () => {
     return (
         <Routes>
-            <Route path={'/'} element={<HomePage/>}/>
-            <Route path={'/menu'} element={<MenuPage/>}/>
-            <Route path={'/company'} element={<CompanyPage/>}/>
-            <Route path={'/login'} element={<LoginPage/>}/>
-            <Route path={'*'} element={<NotFoundPage/>}/>
+            <Route path="/" element={ProtectedRoute(<HomePage />)} />
+            <Route
+                path="/menu"
+                element={ProtectedRoute(<MenuPage />)}
+            />
+            <Route
+                path="/company"
+                element={ProtectedRoute(<CompanyPage />)}
+            />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
-    )
-}
-
+    );
+};
 export default RouterSwitcher;
