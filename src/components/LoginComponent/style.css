@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 36.92px 68px 42.09px 67px;
+  border: 1px solid #35b8be26;
+  margin-top: 53px;
+  margin-bottom: 254px;
+}
+
+.login-title {
+  margin-top: 155px;
+  color: #35b8be;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 1.65px;
+}
+
+.label {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  height: 45px;
+  width: 430px;
+  padding-left: 15px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.36000001430511475px;
+  margin-left: 30px;
+  border-radius: 6px;
+  background: #fafafa;
+}

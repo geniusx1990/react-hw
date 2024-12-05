@@ -1,5 +1,10 @@
+import LoginComponentn from "../../components/LoginComponent/LoginComponent";
+import './style.css';
+
 export default function LoginPage() {
     return (
-        <div> LoginPage </div>
+        <section className="login-section">
+            <LoginComponentn />
+        </section>
     )
 }
