@@ -1,26 +1,10 @@
-import { useEffect, useState } from 'react';
 import MenuList from '../../components/MenuList/MenuList';
 import './style.css';
 import { API_URL } from '../../utils/constants';
+import useFetch from '../../hooks/useFetch';
 
 export default function MenuPage() {
-    const [menuItems, setMenuItems] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        fetch(API_URL)
-            .then(response => response.json())
-            .then(data => {
-                setMenuItems(data);
-                setIsLoading(false);
-
-                console.log(data)
-            })
-            .catch(error => {
-                console.error('Error loading menu:', error);
-                setIsLoading(false);
-            });
-    }, []);
+    const { data: menuItems, isLoading } = useFetch(API_URL);
 
 
     return (
@@ -35,7 +19,6 @@ export default function MenuPage() {
                 ) : (
                     <MenuList items={menuItems} />
                 )}
-               {/*  <button className='more'>See more</button> */}
             </div>
         </section>
     );
