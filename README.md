@@ -18,3 +18,4 @@ npm run dev
 🏗 Building for Production
 To build the project for production, run:
 npm run build
+
