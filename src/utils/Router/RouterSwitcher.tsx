@@ -4,7 +4,7 @@ import MenuPage from "../../pages/MenuPage/MenuPage";
 import CompanyPage from "../../pages/CompanyPage/CompanyPage";
 import LoginPage from "../../pages/LoginPage/LoginPage";
 import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage";
-import { ProtectedRoute } from "./protectedRoute";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 const RouterSwitcher = () => {
     return (
