@@ -1,0 +1,78 @@
+.menu-card {
+  padding: 26.95px 26px 26.05px 26px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-card__name {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  color: #08090a;
+}
+
+.menu-card__price {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #35b8be;
+}
+
+.menu-card__description {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #546285;
+}
+
+.input_count {
+  border: 1px solid #dddddd;
+  background: #fafafa;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  width: 60px;
+  height: 45px;
+  border-radius: 6px;
+}
+
+.button_add {
+  background: #35b8be;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  border: none;
+  color: #ffffff;
+  width: 147px;
+  height: 45px;
+  border-radius: 6px;
+}
+
+.inputs {
+    display: flex;
+    gap: 8px;
+    margin-top: 7.95px;
+}
+
+.card_content_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.05px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,129 @@
+.footer__content_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 99.8px 120px 60.02px;
+}
+
+.foooter_text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  color: #546285;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+}
+
+.footer__content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  background-image: url("../../assets/footer_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__section_links {
+  display: flex;
+}
+
+.footer__section {
+  width: 180.33px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #546285;
+}
+.footer__link-item {
+  list-style-type: none;
+  padding-bottom: 28px;
+}
+
+.footer__links {
+  padding: 0;
+}
+
+.footer__title {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  color: #08090a;
+  padding-bottom: 28px;
+}
+
+.footer__section {
+  padding-right: 16px;
+}
+
+.footer__section:last-child {
+  padding-right: 0px;
+}
+
+.footer_bottom__links {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10.2px;
+}
+
+.footer_bottom-title {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #353448;
+  margin: 0;
+}
+
+.footer_bottom-space {
+  display: inline-block;
+  width: 8px;
+}
+
+.footer_bottom-separator {
+  margin: 0 8px;
+}
+
+.footer_bottom-link {
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 15px;
+  color: #35b8be;
+}
+
+.footer_bottom {
+  border-top: 1px solid #7e828f17;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 100.2px 0px 0px 0px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #7e828f4d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__links {
+  display: flex;
+  gap: 16px;
+}

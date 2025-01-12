@@ -1,0 +1,9 @@
+.login-section {
+  background-image: url("../../assets/login_cover.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
