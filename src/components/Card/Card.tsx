@@ -1,15 +1,11 @@
-import { MenuItem } from '../../utils/constants';
+import { MenuItem } from '../../utils/types';
 import './style.css';
 
-interface MenuCardProps {
-    item: MenuItem;
-}
 
-
-export default function Card({ item }: MenuCardProps) {
+export default function Card({ item }: { item: MenuItem }) {
     return (
         <div className="menu-card">
-            <img src={item.img} alt={`${item.meal}`} width={120} height={120}/>
+            <img src={item.img} alt={`${item.meal}`} width={120} height={120} />
             <div className='card_content'>
                 <div className='card_content_top'>
                     <h2 className="menu-card__name">{item.meal}</h2>
