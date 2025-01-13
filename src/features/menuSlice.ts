@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { API_URL } from '../utils/constants';
 import { MenuItem } from '../utils/types';
 
-// Асинхронный thunk для получения данных
 export const fetchMenuItems = createAsyncThunk('menu/fetchMenuItems', async () => {
   const response = await fetch(API_URL);
   const data = await response.json();
