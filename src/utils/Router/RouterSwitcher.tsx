@@ -4,7 +4,8 @@ import MenuPage from "../../pages/MenuPage/MenuPage";
 import CompanyPage from "../../pages/CompanyPage/CompanyPage";
 import LoginPage from "../../pages/LoginPage/LoginPage";
 import NotFoundPage from "../../pages/NotFoundPage/NotFoundPage";
-import { ProtectedRoute } from "./protectedRoute";
+import { ProtectedRoute } from "./ProtectedRoute";
+import OrderPage from "../../pages/OrderPage/OrderPage";
 
 const RouterSwitcher = () => {
     return (
@@ -19,6 +20,7 @@ const RouterSwitcher = () => {
                 element={ProtectedRoute(<CompanyPage />)}
             />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/orders" element={ProtectedRoute(<OrderPage />)} />
             <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );

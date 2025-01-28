@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './style.css';
-import { MenuItem } from "../../utils/constants";
+import { MenuItem } from "../../utils/types";
 import Card from "../Card/Card";
 
 const MENUSORT = [
@@ -9,13 +9,9 @@ const MENUSORT = [
     { id: 2, name: 'Breakfast' }
 ];
 
-interface MenuListProps {
-    items: MenuItem[]; 
-}
-
-export default function MenuList({ items }: MenuListProps) {
+export default function MenuList({ items }: { items: MenuItem[] }) {
     const [activeTabs, setActiveTabs] = useState<string[]>([]);
-    const [visibleCount, setVisibleCount] = useState<number>(10);
+    const [visibleCount, setVisibleCount] = useState(10);
 
     const handleTabClick = (category: string) => {
         setActiveTabs(prevActiveTabs =>
@@ -27,7 +23,7 @@ export default function MenuList({ items }: MenuListProps) {
     };
 
     const filteredItems = items.filter(item =>
-        activeTabs.length === 0 || 
+        activeTabs.length === 0 ||
         activeTabs.some(category => item.category.includes(category))
     );
 

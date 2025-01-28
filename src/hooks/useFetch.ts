@@ -1,30 +1,16 @@
-import { useState, useEffect } from "react";
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchMenuItems } from '../features/menuSlice';
+import { AppDispatch } from '../store';
 
 const useFetch = (url: string) => {
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
+    dispatch(fetchMenuItems());
+  }, [dispatch, url]);
 
-      try {
-        const response = await fetch(url);
-        const result = await response.json();
-        setData(result);
-
-        localStorage.setItem("fetchedData", JSON.stringify(result));
-      } catch (err) {
-        console.error(err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, [url]);
-
-  return { data, isLoading };
+  return null;
 };
 
 export default useFetch;

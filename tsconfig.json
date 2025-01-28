@@ -1,7 +1,24 @@
 {
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "es2020",
+    "target": "esnext",
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "types": ["@testing-library/jest-dom"],
+    "jsx": "react-jsx"
+  },
   "files": [],
+  "include": [
+  "./jest-setup.ts",
+  "src/**/*.ts",
+  "src/**/*.tsx",
+  "src/**/*.test.tsx" // Include test files
+],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
 }

@@ -1,0 +1,77 @@
+.orders_title {
+  color: #35b8be;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 50px;
+  letter-spacing: 1.65px;
+  margin-top: 140.45px;
+  margin-bottom: 114.55px;
+}
+
+.orders-section {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  background-image: url("../../assets/bg_content.png");
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orders_list {
+  width: 100%;
+  align-items: center;
+}
+
+.order_form {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_group {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 22px;
+}
+
+.order_form-label {
+  font-size: 14px;
+  color: #08090a;
+  width: 100px;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.order_form-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  width: 400px;
+  height: 45px;
+  background-color: #fafafa;
+}
+
+.order_form-button {
+  background-color: #35b8be;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  width: 147px;
+  height: 52px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 13px;
+}
