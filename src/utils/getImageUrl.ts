@@ -1,3 +1,5 @@
-export function getImgUrl(icon: string) {
-    return new URL(`/src/assets/${icon}`, import.meta.url).href;
-}
+export function getImgUrl(icon: string, baseUrl?: string) {
+    const url = baseUrl || (typeof window !== 'undefined' ? window.location.origin : 'http://localhost');
+    return new URL(`/src/assets/${icon}`, url).href;
+  }
+  
